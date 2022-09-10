@@ -1,4 +1,12 @@
 version: 2
+registries:
+  docker-gcr-io:
+    type: docker-registry
+    url: gcr.io
+  docker-dockerhub:
+    type: docker-registry
+    url: registry.hub.docker.com
+
 updates:
   - package-ecosystem: "pip"
     directory: "/"
@@ -13,6 +21,9 @@ updates:
       interval: "daily"
 #     assignees:
 #       - "kannkyo"
+    registries:
+      - docker-gcr-io
+      - docker-dockerhub
 
   - package-ecosystem: "github-actions"
     directory: "/"
