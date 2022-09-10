@@ -4,19 +4,19 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
-    assignees:
-      - "kannkyo"
+#     assignees:
+#       - "kannkyo"
 
   - package-ecosystem: "docker"
     directory: "/"
     schedule:
       interval: "daily"
-    assignees:
-      - "kannkyo"
+#     assignees:
+#       - "kannkyo"
 
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "daily"
-    assignees:
-      - "kannkyo"
+#     assignees:
+#       - "kannkyo"
