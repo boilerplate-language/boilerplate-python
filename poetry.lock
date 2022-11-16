@@ -138,7 +138,7 @@ test = ["hypothesis (>=1.11.4,!=3.79.2)", "iso8601", "pretend", "pytest (>=6.2.0
 
 [[package]]
 name = "cyclonedx-bom"
-version = "3.7.1"
+version = "3.7.2"
 description = "CycloneDX Software Bill of Materials (SBOM) generation utility"
 category = "dev"
 optional = false
@@ -827,7 +827,7 @@ testing = ["func-timeout", "jaraco.itertools", "pytest (>=6)", "pytest-black (>=
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "c63c66e787c9666717ead2036e68c22ad7b4e25a4d088d44a5217bb0373428be"
+content-hash = "ff5ba4669eddd8041124dcd1e7a5449abae4f15831f1162ea368686d4b1c4ba0"
 
 [metadata.files]
 alabaster = [
@@ -986,8 +986,8 @@ cryptography = [
     {file = "cryptography-37.0.2.tar.gz", hash = "sha256:f224ad253cc9cea7568f49077007d2263efa57396a2f2f78114066fd54b5c68e"},
 ]
 cyclonedx-bom = [
-    {file = "cyclonedx_bom-3.7.1-py3-none-any.whl", hash = "sha256:f6012503697746e585893300e4e11808a92e3b20d258eac72872e33972e415a0"},
-    {file = "cyclonedx_bom-3.7.1.tar.gz", hash = "sha256:97f6959bd629374c2763282b84afcbca277ee088b01808d0cdf5475a384df638"},
+    {file = "cyclonedx_bom-3.7.2-py3-none-any.whl", hash = "sha256:170448f9a888549d4c309ce2fedf90ef94f53bf9298cc8e80aef28a90513ccbe"},
+    {file = "cyclonedx_bom-3.7.2.tar.gz", hash = "sha256:f005596f1c740b79d4ceb7205b0e6ae905088b2e7671b7c5363fc50fbd4f5dd7"},
 ]
 cyclonedx-python-lib = [
     {file = "cyclonedx-python-lib-2.5.2.tar.gz", hash = "sha256:875c0dac4c8be1da58cef399eb09ceba8668a153d2bfed67b7af8bdbca5bad61"},
