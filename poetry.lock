@@ -211,7 +211,7 @@ junit-xml = ">=1.8"
 
 [[package]]
 name = "flake8-html"
-version = "0.4.2"
+version = "0.4.3"
 description = "Generate HTML reports of flake8 violations"
 category = "dev"
 optional = false
@@ -827,7 +827,7 @@ testing = ["func-timeout", "jaraco.itertools", "pytest (>=6)", "pytest-black (>=
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "ff5ba4669eddd8041124dcd1e7a5449abae4f15831f1162ea368686d4b1c4ba0"
+content-hash = "5d863de9471487610b1348e2da91ccb7d64acbb9f5f9e26452b32e2301f45de5"
 
 [metadata.files]
 alabaster = [
@@ -1010,8 +1010,8 @@ flake8-formatter-junit-xml = [
     {file = "flake8_formatter_junit_xml-0.0.6.tar.gz", hash = "sha256:1ddd9356bb30ba736c3f14c769c837cfacf4f79c3d383ab963ef9d38eea05a9c"},
 ]
 flake8-html = [
-    {file = "flake8-html-0.4.2.tar.gz", hash = "sha256:6d3f2cbae8a0092d922ca5acf88f971d85a2bd69723d0dceba65e57bcaa0adba"},
-    {file = "flake8_html-0.4.2-py2.py3-none-any.whl", hash = "sha256:5db0439169987509690ef8c90efb00346009bcc5cffb8b94fe0ad30cd655b88c"},
+    {file = "flake8-html-0.4.3.tar.gz", hash = "sha256:8b870299620cc4a06f73644a1b4d457799abeca1cc914c62ae71ec5bf65c79a5"},
+    {file = "flake8_html-0.4.3-py2.py3-none-any.whl", hash = "sha256:8f126748b1b0edd6cd39e87c6192df56e2f8655b0aa2bb00ffeac8cf27be4325"},
 ]
 flask = [
     {file = "Flask-2.2.2-py3-none-any.whl", hash = "sha256:b9c46cc36662a7949f34b52d8ec7bb59c0d74ba08ba6cb9ce9adc1d8676d9526"},
