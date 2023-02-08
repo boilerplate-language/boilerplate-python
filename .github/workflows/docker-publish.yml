@@ -64,7 +64,7 @@ jobs:
         run: cosign sign ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}@${{ steps.build-and-push.outputs.digest }}
 
       - name: Publish container SBOM to release asset
-        uses: anchore/sbom-action@06e109483e6aa305a2b2395eabae554e51530e1d
+        uses: anchore/sbom-action@07978da4bdb4faa726e52dfc6b1bed63d4b56479
         with:
           image: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}@${{ steps.build-and-push.outputs.digest }}
           registry-username: ${{ github.actor }}
