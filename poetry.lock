@@ -476,14 +476,14 @@ testing = ["flufl.flake8", "importlib-resources (>=1.3)", "packaging", "pyfakefs
 
 [[package]]
 name = "in-toto"
-version = "1.3.1"
+version = "1.3.2"
 description = "A framework to define and secure the integrity of software supply chains"
 category = "dev"
 optional = false
 python-versions = "~=3.7"
 files = [
-    {file = "in_toto-1.3.1-py3-none-any.whl", hash = "sha256:86756d6c2629f2ef573aa453da7e173d4307840008be6d477ae388fb19009ec9"},
-    {file = "in_toto-1.3.1.tar.gz", hash = "sha256:66744b1138aff8d29ecaed38073593c5bfa4b30ee2696ef6fd5da149e58cf235"},
+    {file = "in_toto-1.3.2-py3-none-any.whl", hash = "sha256:aa12e63298425cfc4773ed03febd68a384c63b2690959dd788f8c4511ea97bbe"},
+    {file = "in_toto-1.3.2.tar.gz", hash = "sha256:f6896c1cb5e0b311a8f888a90a854bb978fcf981d5f1c2b1d0828214a2e50be3"},
 ]
 
 [package.dependencies]
@@ -491,7 +491,7 @@ attrs = "*"
 iso8601 = "*"
 pathspec = "*"
 python-dateutil = "*"
-securesystemslib = {version = ">=0.18.0", extras = ["crypto"]}
+securesystemslib = {version = ">=0.27.0", extras = ["crypto"]}
 
 [package.extras]
 pynacl = ["pynacl (>1.2.0)"]
@@ -940,23 +940,26 @@ use-chardet-on-py3 = ["chardet (>=3.0.2,<5)"]
 
 [[package]]
 name = "securesystemslib"
-version = "0.23.0"
+version = "0.27.0"
 description = "A library that provides cryptographic and general-purpose routines for Secure Systems Lab projects at NYU"
 category = "dev"
 optional = false
 python-versions = "~=3.7"
 files = [
-    {file = "securesystemslib-0.23.0-py3-none-any.whl", hash = "sha256:613c2891a8b4480bae6edb2351710f8c695679101ea7f471cc56f64980d2cd38"},
-    {file = "securesystemslib-0.23.0.tar.gz", hash = "sha256:573e9c810f2a6afe9ac71a177f26b9d6a321c53574f561f5cef2ed511c3f1831"},
+    {file = "securesystemslib-0.27.0-py3-none-any.whl", hash = "sha256:7ba326a41f980b3897356663144f6091531bf3d4e8333b821164526ce8e9f48d"},
+    {file = "securesystemslib-0.27.0.tar.gz", hash = "sha256:27fab4aae9adaf82530dc58f8e85a546f637d5ec5c5ef00d261689985420a70b"},
 ]
 
 [package.dependencies]
-cryptography = {version = ">=3.3.2", optional = true, markers = "extra == \"crypto\""}
+cryptography = {version = ">=37.0.0", optional = true, markers = "extra == \"crypto\""}
 
 [package.extras]
-colors = ["colorama (>=0.3.9)"]
-crypto = ["cryptography (>=3.3.2)"]
+crypto = ["cryptography (>=37.0.0)"]
+gcpkms = ["cryptography (>=37.0.0)", "google-cloud-kms"]
+hsm = ["asn1crypto", "cryptography (>=37.0.0)", "pykcs11"]
 pynacl = ["pynacl (>1.2.0)"]
+pyspx = ["pyspx (>=0.5.0)"]
+sigstore = ["sigstore"]
 
 [[package]]
 name = "setuptools"
@@ -1270,4 +1273,4 @@ testing = ["func-timeout", "jaraco.itertools", "pytest (>=6)", "pytest-black (>=
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.8"
-content-hash = "52eba8814a902c80a38de0a170cbfc9f338b7aeb3b809bd16329b97312af2f99"
+content-hash = "fd2f9cb89e4fc61c0be60dc507e183a2d96baaa604af830d9420f7fe0a3f8f7d"
