@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@83b7061638ee4956cf7545a6f7efe594e5ad0247
+        uses: actions/checkout@8e5e7e5ab8b370d6c329ec480221332ada57f0ab
 
       - name: Setup docker environment
         uses: ./.github/actions/docker-setup
@@ -45,7 +45,7 @@ jobs:
     needs: dockerize
     steps:
       - name: Checkout repository
-        uses: actions/checkout@83b7061638ee4956cf7545a6f7efe594e5ad0247
+        uses: actions/checkout@8e5e7e5ab8b370d6c329ec480221332ada57f0ab
 
       - name: Setup docker environment
         uses: ./.github/actions/docker-setup
@@ -80,7 +80,7 @@ jobs:
     needs: dockerize
     steps:
       - name: Checkout repository
-        uses: actions/checkout@83b7061638ee4956cf7545a6f7efe594e5ad0247
+        uses: actions/checkout@8e5e7e5ab8b370d6c329ec480221332ada57f0ab
 
       - name: Setup docker environment
         uses: ./.github/actions/docker-setup
@@ -114,7 +114,7 @@ jobs:
       security-events: write
     steps:
       - name: Checkout repository
-        uses: actions/checkout@83b7061638ee4956cf7545a6f7efe594e5ad0247
+        uses: actions/checkout@8e5e7e5ab8b370d6c329ec480221332ada57f0ab
 
       - name: Scan Dockerfile by grype
         id: grype-files
@@ -136,7 +136,7 @@ jobs:
       security-events: write
     steps:
       - name: Checkout repository
-        uses: actions/checkout@83b7061638ee4956cf7545a6f7efe594e5ad0247
+        uses: actions/checkout@8e5e7e5ab8b370d6c329ec480221332ada57f0ab
 
       - name: Scan Dockerfile by hadolint
         uses: hadolint/hadolint-action@f988afea3da57ee48710a9795b6bb677cc901183
