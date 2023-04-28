@@ -69,7 +69,7 @@ jobs:
           severity: "CRITICAL,HIGH"
 
       - name: Publish trivy report to GitHub Security
-        uses: github/codeql-action/upload-sarif@8662eabe0e9f338a07350b7fd050732745f93848
+        uses: github/codeql-action/upload-sarif@f3feb00acb00f31a6f60280e6ace9ca31d91c76a
         with:
           sarif_file: "trivy-results.sarif"
 
@@ -104,7 +104,7 @@ jobs:
           acs-report-enable: true
 
       - name: Publish grype report to GitHub Security
-        uses: github/codeql-action/upload-sarif@8662eabe0e9f338a07350b7fd050732745f93848
+        uses: github/codeql-action/upload-sarif@f3feb00acb00f31a6f60280e6ace9ca31d91c76a
         with:
           sarif_file: ${{ steps.grype-image.outputs.sarif }}
 
@@ -126,7 +126,7 @@ jobs:
           acs-report-enable: true
 
       - name: Publish grype report to GitHub Security
-        uses: github/codeql-action/upload-sarif@8662eabe0e9f338a07350b7fd050732745f93848
+        uses: github/codeql-action/upload-sarif@f3feb00acb00f31a6f60280e6ace9ca31d91c76a
         with:
           sarif_file: ${{ steps.grype-files.outputs.sarif }}
 
@@ -147,7 +147,7 @@ jobs:
           no-fail: true
 
       - name: Publish hadolint report to GitHub Security
-        uses: github/codeql-action/upload-sarif@8662eabe0e9f338a07350b7fd050732745f93848
+        uses: github/codeql-action/upload-sarif@f3feb00acb00f31a6f60280e6ace9ca31d91c76a
         with:
           sarif_file: hadolint-results.sarif
           wait-for-processing: true
