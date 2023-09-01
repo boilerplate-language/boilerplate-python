@@ -84,7 +84,7 @@ jobs:
         run: poetry run sphinx
 
       - name: Publish API document to GitHub pages
-        uses: crazy-max/ghaction-github-pages@c0d7ff0487ee0415efb7f32dab10ea880330b1dd
+        uses: crazy-max/ghaction-github-pages@5859b4ea7efe6b470a5b19c570460eae9323aefc
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
