@@ -465,13 +465,13 @@ testing = ["flufl.flake8", "importlib-resources (>=1.3)", "packaging", "pyfakefs
 
 [[package]]
 name = "in-toto"
-version = "1.4.0"
+version = "2.1.0"
 description = "A framework to define and secure the integrity of software supply chains"
 optional = false
 python-versions = "~=3.7"
 files = [
-    {file = "in_toto-1.4.0-py3-none-any.whl", hash = "sha256:29a86b8a287925cb13149888fb0a194fd6046b24e3e68afa22a7fd4b775851af"},
-    {file = "in_toto-1.4.0.tar.gz", hash = "sha256:d6b855bf2345f9e164702395e6b4bf034a96758e233262efca56f2681fea2954"},
+    {file = "in_toto-2.1.0-py3-none-any.whl", hash = "sha256:fb145a85b72afb7d935d9d7378338be9b5acf88ef0cfef202366606df8c8fac9"},
+    {file = "in_toto-2.1.0.tar.gz", hash = "sha256:9cb4b32707281f9d30049255cba7785228bbbe1b3dd7295fffdc403c2f35c9b3"},
 ]
 
 [package.dependencies]
@@ -1216,4 +1216,4 @@ testing = ["func-timeout", "jaraco.itertools", "pytest (>=6)", "pytest-black (>=
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.8"
-content-hash = "018be1a2f1200c270397ec8455c6756def90f28ee009e6ba0135e7049c42cd1b"
+content-hash = "fe73fa6410b6b61cdcf4fb39b1dceb8788e34bdac7b5d42697cca9e3206795b8"
