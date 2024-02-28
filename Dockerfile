@@ -8,7 +8,7 @@ COPY pyproject.toml poetry.lock ./
 RUN python -m pip install --no-cache-dir poetry==1.1.13 \
     && poetry install
 
-FROM gcr.io/distroless/python3@sha256:e3cc51b5d1d8385d645064a2ff75c77ab3c1219db378fc36e38e82a21b14bba1
+FROM gcr.io/distroless/python3@sha256:29600095ec47cd6dd9be66051249e18ff02aaaa14958932400698099fdb839c4
 # FROM gcr.io/distroless/python3:latest
 
 EXPOSE 5000
