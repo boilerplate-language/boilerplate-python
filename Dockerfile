@@ -1,4 +1,4 @@
-FROM python@sha256:eeed7cac682f9274d183f8a7533ee1360a26acb3616aa712b2be7896f80d8c5f as builder
+FROM python@sha256:19973e1796237522ed1fcc1357c766770b47dc15854eafdda055b65953fe5ec1 as builder
 # FROM python:3 as builder
 
 WORKDIR /usr/src/app
